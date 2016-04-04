@@ -31,3 +31,32 @@
     top:320px;
     right:20px
 }
+
+.m-list-item-text{
+    background: #000;
+    color: white;
+}
+.m-list-item-text>div{
+    display: inline;
+}
+
+.m-body{
+    background: darkgrey;
+    color: white;
+}
+.m-body-award{
+    background: black;
+    padding: 5px;
+}
+.m-body-title h2{
+    margin: 5px 0;
+}
+.m-body-img1 img{
+    width: 180px;
+}
+.m-body-img2 img{
+    width: 180px;
+}
+.m-body-btn img{
+    width: 180px;
+}

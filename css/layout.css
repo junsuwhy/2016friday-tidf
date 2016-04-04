@@ -16,3 +16,65 @@
 .layout-main {
     
 }
+.m-list-item{
+    float: left;
+}
+.m-list-item{
+    position: relative;
+    width: 480px;
+    height: 320px;
+}
+.m-list-item-img{
+    width: 480px;
+    height: 320px;
+}
+.m-list-item-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+}
+.m-body{
+    clear: both;
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+.m-body>div{
+    position: absolute;
+}
+.m-body-award{
+    left: 0;
+    top: 30px;
+}
+.m-body-img1 {
+    left: 80px;
+    bottom: 48px;
+}
+
+.m-body-youtube {
+    bottom: 48px;
+    left: 280px;
+}
+
+.m-body-img2 {
+    bottom: 48px;
+    left: 540px;
+}
+
+.m-body-title {
+    left: 280px;
+    top: 80px;
+}
+
+.m-body-body {
+    left: 280px;
+    top: 120px;
+    width: 260px;
+}
+
+.m-body-btn {
+    top: 80px;
+    left: 540px;
+}

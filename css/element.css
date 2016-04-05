@@ -60,3 +60,7 @@
 .m-body-btn img{
     width: 180px;
 }
+
+.main-body{
+    display: none;
+}

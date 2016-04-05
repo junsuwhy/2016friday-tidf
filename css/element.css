@@ -1,3 +1,7 @@
+*{
+  font-family: 'SourceHanSans','PingFang TC','Heiti TC','Microsoft JhengHei',San-serif;  
+}
+
 .layout-slideshow{
     background: url(../img/banner.png);
 }
@@ -61,6 +65,26 @@
     width: 180px;
 }
 
-.main-body{
-    display: none;
+
+.focus-title{
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;
+    color: #C74D95;
+}
+
+.tip-title{
+    background: #C74D95;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tip-body{
+    height: 0;
+    display: block;
+    overflow: hidden;
+    background: #D6D7D7;
 }

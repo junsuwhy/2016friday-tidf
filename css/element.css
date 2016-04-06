@@ -88,8 +88,14 @@
 }
 
 .tip-body{
-    height: 0;
     display: block;
     overflow: hidden;
+    transition: max-height .6s;
     background: #D6D7D7;
+}
+.tip-body:not(.tip-body-open){
+    max-height: 0;
+}
+.tip-body-open{
+    max-height: 999px;
 }

@@ -7,9 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="css/element.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+
 <!--	<script src="js/lib/angular.min.js"></script>-->
     <script type="text/javascript" src="js/lib/jquery.min.js"></script>
     <script type="text/javascript" src="js/lib/slick.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.fancybox.pack.js"></script>
+
 	<script type="text/javascript" src="js/data.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 <!--	<script src="js/controller.js"></script>-->
@@ -17,12 +21,12 @@
 <body>
 <div id="wrapper">
     <div class="layout layout-header">
-        Header
+    
     </div>
     <div class="layout layout-slideshow">
         <div class="slideshow-submenu slideshow-block">
-            <a href="" class="s-submenu-btn">什麼是影劇館全館7天免費序號</a>
-            <a href="" class="s-submenu-btn">什麼是影劇館199</a>
+            <a href="img/7daysfree.jpg" rel="gallery1" class="s-submenu-btn fancybox">什麼是影劇館全館7天免費序號</a>
+            <a href="img/friDay199.jpg" rel="gallery2" class="s-submenu-btn fancybox">什麼是影劇館199</a>
         </div>
         <div class="slideshow-body slideshow-block">
            <h2>搶先播映TIDF歷屆得獎精選!</h2>
@@ -53,7 +57,7 @@
             <div class="m-body-template m-body-item">
                <div class="m-body-award">{{award}}</div>
                <div class="m-body-img1"><img src="img/{{imgBig}}" alt=""></div>
-               <div class="m-body-youtube"></div>
+               <div class="m-body-youtube"><iframe width="180" height="110" src="https://www.youtube.com/embed/{{youtubeID}}?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
                <div class="m-body-img2"><img src="img/{{imgSmall}}" alt=""></div>
                <div class="m-body-title"><h2>{{title}}</h2></div>
                <div class="m-body-body">{{description}}</div>
@@ -75,16 +79,17 @@
             <div class="tip-title">貼心小叮嚀</div>
             <div class="tip-body">
                 <ol>
-		            <li>非遠傳電信用戶...</li>
-		            <li>輸入friDay影音體驗序號...</li>
-            		<li>抽獎活動辦法：...</li>
-            		<li>贈品名額：20名...</li>
-            		<li>得獎名單於2016/4/27前公布於...</li>
-            		<li>friDay影音保留更換活動贈品...</li>
-            		<li>版權與線上串流說明：...</li>
-            		<li>friDay影音提供線上影片服務，觀看...</li>
-				    <li>friDay影音開放每個正式會員帳號...</li>
-				    <li>參加本活動同時，...</li>
+<li>非遠傳電信用戶，請先<a target="_blank" href="https://member.friday.tw/fri/sso/login?fetnet=1&fb=1">申請friDay會員</a>或以facebook身份登入；遠傳門號綁約用戶及原friDay影音用戶，請以遠傳網路會員身份登入。</li>
+<li>輸入friDay影音體驗序號，可享friDay影音影劇館七天免費體驗，體驗期滿，服務將自動終止。序號限2016/5/31前兌換，每門號限兌換一次，逾時視同放棄。若您目前為原friDay影音或friDay影音年約專案每月自動續扣會員，恕無法進行免費優惠。</li>
+<li>抽獎活動辦法: 即日起~4/24期間，線上兌換序號成功即可參加抽獎</li>
+<li>贈品名額: 20 名 ，每名可獲得2張2016TIDF影展貴賓票券，每張貴賓票券限用乙場，依票券上公佈指定日期時間至放映地點排隊入場，每場座位有限，額滿為止，主辦單位保留變更活動辦法之權利。</li>
+<li>得獎名單於2016/4/27前公布於<a target="_blank" href="https://www.facebook.com/FETVOD">「friDay影音」臉書粉絲團</a>，同步寄送得獎通知至用戶帳號個人訊息夾，需於2016/4/28前回覆寄送地址與收件人等資訊，2016/3/4前寄送贈品。</li>
+<li>friDay影音保留更換活動贈品並提供相對應等值之贈品之權利</li>
+<li>版權與線上串流說明：因影片版權限制，本服務目前僅限台澎金馬地區使用。friDay影音電影看到飽服務，需於網路連線狀態下方可使用。</li>
+<li>friDay影音提供線上影片服務，觀看影片可能產生傳輸費用，詳情請洽您的網路提供商確認網路費用與可使用頻寬上限。</li>
+<li>friDay影音開放每個正式會員帳號最多可在三台裝置啟用，若您想刪除已啟用的裝置，可在friDay影音網站設定或洽客服中心。實際支援機種請依friDay影音(video.friday.tw)公告為準。</li>
+<li>參加本活動同時，即視為同意接受本活動規範，friDay影音保留對本活動取消、終止、修改或暫停之權利</li>
+
 				</ol>
             </div>
         </div>

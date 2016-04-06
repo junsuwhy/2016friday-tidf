@@ -1,13 +1,18 @@
 $(document).ready(function ($) {
-    $("tip-title").click(function () {
-		$(".tip-body").animate({height: $("tip-body").get(0).scrollHeight},'slow');
-		$(".tip-body").css("height","auto");
+    $(".tip-title").click(function () {
+//		$(".tip-body").animate({height: $("tip-body").get(0).scrollHeight()},'slow');
+		$(".tip-body").toggleClass('tip-body-open');
+//        $(".tip-body").css("height","auto");
     });
     copyTemplate(".m-list-item-template",".m-list",data,dataFields);
     $('.m-list').slick({
         slidesToShow: 2,
         slidesToScroll: 2
     });
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
 });
 
 

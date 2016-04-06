@@ -1,4 +1,4 @@
-var dataFields = ["title","director","award","description","imgBig","imgSmall","youtubeID"];
+var dataFields = ["title","director","award","description","imgBig","imgSmall","youtubeID","link"];
 
 
 /**
@@ -23,6 +23,7 @@ var data = [
         "title" : "艾未未．草泥馬",
         "director" : "XXX",
         "award" : "TIDF歷年得獎精選 第八屆台灣獎首獎",
+        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從 小離鄉的知名畫家劉小東,30年後決 定重歸故里,重新面對鄉愁",
         "imgBig" : "pic2_1.jpg",
         "imgSmall" : "pic2_2.jpg",
         "youtubeID" : "hKmZ65MlOl8",

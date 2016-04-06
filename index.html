@@ -1,33 +1,80 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=640px">
+<title>friDay影音</title>
+<meta name="keywords" content="關鍵字">
+<meta name="description" content="網頁描述">
+<!--FB meta-->
+<meta property="og:site_name" content="friDay影音">
+<meta property="og:type" content="website">
+<meta property="og:title" content="friDay影音">
+<meta property="og:description" content="電影隨選隨看">
+<!--Google+ meta-->
+<meta itemprop="name" content="friDay影音"/>
+<meta itemprop="description" content="電影隨選隨看" >
+<!--CSS Link-->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="http://video.friday.tw/eventcom/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
 	<link rel="stylesheet" type="text/css" href="css/element.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-
-<!--	<script src="js/lib/angular.min.js"></script>-->
     <script type="text/javascript" src="js/lib/jquery.min.js"></script>
     <script type="text/javascript" src="js/lib/slick.min.js"></script>
     <script type="text/javascript" src="js/lib/jquery.fancybox.pack.js"></script>
 
 	<script type="text/javascript" src="js/data.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-<!--	<script src="js/controller.js"></script>-->
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
+<!--TOP語法-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://video.friday.tw/eventcom/javascripts/webtrends/sdc1.js" type="text/javascript"></script>
+<script src="http://video.friday.tw/eventcom/javascripts/webtrends/sdc2.js" type="text/javascript"></script>
+<script src="http://video.friday.tw/eventcom/javascripts/webtrends/sdc3.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){	 
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			});	 
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 700);
+				return false;
+			});	
+		});
+    </script>
+<!--end TOP語法-->
 <body>
-<div id="wrapper">
-    <div class="layout layout-header">
-    
+<div id="wrap"> 
+  <!--  PC START  -->
+  <div id="container_pc"> 
+    <!-- header -->
+    <div id="header_pc">
+      <h1><a href="http://video.friday.tw/" target="_blank"><img src="images/logo_pc.jpg" /></a></h1>
+      <div class="login">
+      <a href="https://member.friday.tw/fri/sso/authorize?fb=1&response_type=code&client_id=607201de-7d99-4343-86df-57f2489f66f9&scope=phone+address+email+openid+profile&nonce=927ad9c0b8f0&state=11dffa0324435&redirect_uri=http://video.friday.tw/login_result" target="_blank">加入會員</a>
+      <a href="https://member.friday.tw/fri/sso/authorize?fb=1&response_type=code&client_id=607201de-7d99-4343-86df-57f2489f66f9&scope=phone+address+email+openid+profile&nonce=927ad9c0b8f0&state=11dffa0324435&redirect_uri=http://video.friday.tw/login_result" target="_blank">登入</a>
+      <a href="https://www.facebook.com/FETVOD?fref=ts" target="_blank" class="login_fb">加入粉絲團</a></div>
     </div>
-    <div class="layout layout-slideshow">
+    <div class="Clearfloat"></div>
+    
+    <!--wrapper-->
+    <div id="wrapper">
+    
+    <div class="layout layout-slideshow layout-slideshow-pc">
         <div class="slideshow-submenu slideshow-block">
             <a href="img/7daysfree.jpg" rel="gallery1" class="s-submenu-btn fancybox">什麼是影劇館全館7天免費序號</a>
             <a href="img/friDay199.jpg" rel="gallery2" class="s-submenu-btn fancybox">什麼是影劇館199</a>
         </div>
+        <div class="slideshow-title"><img src="img/title_pc.png" alt=""></div>
         <div class="slideshow-body slideshow-block">
            <h2>搶先播映TIDF歷屆得獎精選!</h2>
             <p class="s-body">立即輸入序號[<span>2016TIDF</span>],TIDF歷屆得獎影片免費 看,4/24前兌換,加碼再抽2016TIDF影展兌換券!</p>
@@ -39,10 +86,13 @@
     </div>
     <div class="layout layout-main">
         <div class="m-list">
+           <div class="m-list-inner m-list-inner-pc">
+               
+           </div>
             
         </div>
         <div class="m-list-item-wrapper">
-            <div class="m-list-item-template m-list-item">
+            <div class="m-list-item-template m-list-item-template-m m-list-item m-list-item-m">
                 <img class="m-list-item-img" src="img/{{imgSmall}}" alt="">
                 <div class="m-list-item-text">
                     <div class="mlit-award">{{award}}</div>
@@ -50,14 +100,14 @@
                 </div>
             </div>
         </div>
-        <div class="m-body">
+        <div class="m-body m-body-pc">
             
         </div>
         <div class="m-body-template-wrapper">
-            <div class="m-body-template m-body-item">
+            <div class="m-body-template m-body-item m-body-template-pc">
                <div class="m-body-award">{{award}}</div>
                <div class="m-body-img1"><img src="img/{{imgBig}}" alt=""></div>
-               <div class="m-body-youtube"><iframe width="180" height="110" src="https://www.youtube.com/embed/{{youtubeID}}?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+               <div class="m-body-youtube"><iframe width="243" height="135" src="https://www.youtube.com/embed/{{youtubeID}}?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
                <div class="m-body-img2"><img src="img/{{imgSmall}}" alt=""></div>
                <div class="m-body-title"><h2>{{title}}</h2></div>
                <div class="m-body-body">{{description}}</div>
@@ -66,14 +116,25 @@
         </div>
         
         
-        <div class="m-focus">
-            <div class="focus-title">焦點影展</div>
-            <div class="focus-body">
-                <div class="focus-item">療育寵物影展</div>
-                <div class="focus-item">療育寵物影展</div>
-                <div class="focus-item">療育寵物影展</div>
+        <!--焦點影展-->
+  <div id="AdBanners">
+  	<h3></h3>
+    	<!--banner區-->
+        <div id="Banners">
+        	<a id="left"></a>
+            <div class="banner_In">
+                <ul>
+                    <li><a href="https://www.facebook.com/FETVOD" target="_blank"><img src="images/banner_a.jpg"></a></li>
+                    <li><a href="http://ads.fetnet.net/TrackingLog/stmc.aspx?ids=69aLe" target="_blank"><img src="images/banner_b.jpg"></a></li>
+                    <li><a href="http://ads.fetnet.net/TrackingLog/stmc.aspx?ids=qJEVi" target="_blank"><img src="images/banner_c.jpg"></a></li>
+                    <li><a href="http://ads.fetnet.net/TrackingLog/stmc.aspx?ids=730n4" target="_blank"><img src="images/banner_d.jpg"></a></li>                    
+                </ul>
             </div>
-        </div>
+            <a id="right"></a>
+        </div>      
+        <!--banner區 end-->  
+    </div>
+   <!--焦點影展 end-->
         
         <div class="m-tip">
             <div class="tip-title">貼心小叮嚀</div>
@@ -94,26 +155,130 @@
             </div>
         </div>
     </div>
+
+</div><!--#wrapper-->
     
-    <div class="layout layout-footer">
-        <div class="logo friDay"></div>
-        <div class="logo tidf"></div>
-        <ul>
-           <li>關於遠傳</li>
-           <li>隱私權條款</li>
-           <li>合作提案</li>
-           <li>行政院消保會</li>
-           <li>著作權保護措施</li>
-        </ul>
-        <div class="footer-info">
-            客服專線：遠傳手機直撥888/123 MVPN用戶99888/123（免費）；市話撥449-5888/449-5123（市內計費）。其他服務專線<br/>
-            遠傳電信版權所有 Copyright©2016 Far Eastone Telecommunications Co., Ltd. All Rights Reserved.
+    <!-- footer -->
+    <div id="footer_pc">
+      <div class="ftr_logosA"><a href="http://video.friday.tw/" target="_blank"><img src="images/ftr_logo01_A.jpg" /></a> <a href="#"><img src="images/ftr_logo02_A.jpg" /></a> </div>
+      <div class="footer_linksA"><a href="http://www.fetnet.net/cs/Satellite/Corporate/coHome" target="_blank">關於遠傳</a>｜<a href="http://www.fetnet.net/mobile/privacy.html" target="_blank">隱私權條款</a>｜<a href="mailto:video@fareastone.com.tw" target="_blank">合作提案</a>｜<a href="http://www.cpc.ey.gov.tw/" target="_blank">行政院消保會</a>｜<a href="http://www.fetnet.net/mobile/copyright.html" target="_blank">著作權保護措施</a>
+        <p>客服專線：遠傳手機直撥888/123 MVPN用戶99888/123(免費)；市話撥449-5888/449-5123 (市內計費)。<a href="http://www.fetnet.net/cs/Satellite/eCare/Service_no" target="_blank">其他服務專線</a><br />
+          遠傳電信版權所有 Copyright ©2016 Far Eastone  Telecommunications Co., Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+  <!--  PC END  --> 
+  <!--  MOBLIE START  -->
+  <div id="container_m">
+    <div id="header_m">
+      <h1><a href="http://video.friday.tw/" target="_blank"><img src="images/logo_m.png" width="118" height="30" /></a></h1>
+      <div class="login">
+      <a href="https://member.friday.tw/fri/sso/authorize?fb=1&response_type=code&client_id=607201de-7d99-4343-86df-57f2489f66f9&scope=phone+address+email+openid+profile&nonce=927ad9c0b8f0&state=11dffa0324435&redirect_uri=http://video.friday.tw/login_result" target="_blank">加入會員</a>
+      <a href="https://member.friday.tw/fri/sso/authorize?fb=1&response_type=code&client_id=607201de-7d99-4343-86df-57f2489f66f9&scope=phone+address+email+openid+profile&nonce=927ad9c0b8f0&state=11dffa0324435&redirect_uri=http://video.friday.tw/login_result" target="_blank">登入</a>
+      <a href="https://www.facebook.com/FETVOD?fref=ts" target="_blank" class="login_fb">加入粉絲團</a></div>
+    </div>
+    <div class="Clearfloat"></div>
+    <!--wrapper-->
+    <div id="wrapper">
+    <div class="layout layout-slideshow layout-slideshow-m">
+        <div class="slideshow-submenu slideshow-block">
+            <a href="img/7daysfree.jpg" rel="gallery1" class="s-submenu-btn fancybox">什麼是影劇館全館7天免費序號</a>
+            <a href="img/friDay199.jpg" rel="gallery2" class="s-submenu-btn fancybox">什麼是影劇館199</a>
+        </div>
+        <div class="slideshow-title"><img src="img/title_m.png" alt=""></div>
+        <div class="slideshow-body slideshow-block">
+           <h2>搶先播映TIDF歷屆得獎精選!</h2>
+            <p class="s-body">立即輸入序號[<span>2016TIDF</span>],TIDF歷屆得獎影片免費 看,4/24前兌換,加碼再抽2016TIDF影展兌換券!</p>
+        </div>
+        <div class="slideshow-menu slideshow-block">
+            <a href="http://video.friday.tw/sn" class="s-menu-btn"><img src="img/btn-1.png" alt=""></a>
+            <a href="http://video.friday.tw/packages" class="s-menu-btn"><img src="img/btn-2.png" alt=""></a>
+        </div>
+    </div>
+    <div class="layout layout-main">
+        <div class="m-list">
+           <div class="m-list-inner m-list-inner-m">
+               
+           </div>
+            
+        </div>
+        <div class="m-list-item-wrapper">
+            <div class="m-list-item-template m-list-item-template-pc m-list-item m-list-item-pc">
+                <img class="m-list-item-img" src="img/{{imgSmall}}" alt="">
+                <div class="m-list-item-text">
+                    <div class="mlit-award">{{award}}</div>
+                    <div class="mlit-title">{{title}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="m-body m-body-m">
+            
+        </div>
+        <div class="m-body-template-wrapper">
+            <div class="m-body-template m-body-item m-body-template-m">
+               <div class="m-body-award">{{award}}</div>
+               <div class="m-body-img1"><img src="img/{{imgBig}}" alt=""></div>
+               <div class="m-body-youtube"><iframe width="505" height="290" src="https://www.youtube.com/embed/{{youtubeID}}?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+               <div class="m-body-img2"><img src="img/{{imgSmall}}" alt=""></div>
+               <div class="m-body-title"><h2>{{title}}</h2></div>
+               <div class="m-body-body">{{description}}</div>
+               <div class="m-body-btn"><a href="{{link}}"><img src="img/btn-movie.png" alt=""></a></div>
+           </div>
         </div>
         
+        
+        <!--焦點影展-->
+  <div id="AdBanners">
+  	<h3></h3>
+    	<!--banner區-->
+        <div id="Banners_m">
+        	<a id="left_m"></a>
+            <div class="banner_In_m">
+                <ul>
+                    <li><a href="https://www.facebook.com/FETVOD" target="_blank"><img src="images/banner_a.jpg"></a></li>
+                    <li><a href="http://ads.fetnet.net/TrackingLog/stmc.aspx?ids=69aLe" target="_blank"><img src="images/banner_b.jpg"></a></li>
+                    <li><a href="http://ads.fetnet.net/TrackingLog/stmc.aspx?ids=qJEVi" target="_blank"><img src="images/banner_c.jpg"></a></li>
+                    <li><a href="http://ads.fetnet.net/TrackingLog/stmc.aspx?ids=730n4" target="_blank"><img src="images/banner_d.jpg"></a></li>                    
+                </ul>
+            </div>
+            <a id="right_m"></a>
+        </div>      
+        <!--banner區 end-->  
     </div>
-	
+   <!--焦點影展 end-->
+        
+        <div class="m-tip">
+            <div class="tip-title">貼心小叮嚀</div>
+            <div class="tip-body">
+                <ol>
+<li>非遠傳電信用戶，請先<a target="_blank" href="https://member.friday.tw/fri/sso/login?fetnet=1&fb=1">申請friDay會員</a>或以facebook身份登入；遠傳門號綁約用戶及原friDay影音用戶，請以遠傳網路會員身份登入。</li>
+<li>輸入friDay影音體驗序號，可享friDay影音影劇館七天免費體驗，體驗期滿，服務將自動終止。序號限2016/5/31前兌換，每門號限兌換一次，逾時視同放棄。若您目前為原friDay影音或friDay影音年約專案每月自動續扣會員，恕無法進行免費優惠。</li>
+<li>抽獎活動辦法: 即日起~4/24期間，線上兌換序號成功即可參加抽獎</li>
+<li>贈品名額: 20 名 ，每名可獲得2張2016TIDF影展貴賓票券，每張貴賓票券限用乙場，依票券上公佈指定日期時間至放映地點排隊入場，每場座位有限，額滿為止，主辦單位保留變更活動辦法之權利。</li>
+<li>得獎名單於2016/4/27前公布於<a target="_blank" href="https://www.facebook.com/FETVOD">「friDay影音」臉書粉絲團</a>，同步寄送得獎通知至用戶帳號個人訊息夾，需於2016/4/28前回覆寄送地址與收件人等資訊，2016/3/4前寄送贈品。</li>
+<li>friDay影音保留更換活動贈品並提供相對應等值之贈品之權利</li>
+<li>版權與線上串流說明：因影片版權限制，本服務目前僅限台澎金馬地區使用。friDay影音電影看到飽服務，需於網路連線狀態下方可使用。</li>
+<li>friDay影音提供線上影片服務，觀看影片可能產生傳輸費用，詳情請洽您的網路提供商確認網路費用與可使用頻寬上限。</li>
+<li>friDay影音開放每個正式會員帳號最多可在三台裝置啟用，若您想刪除已啟用的裝置，可在friDay影音網站設定或洽客服中心。實際支援機種請依friDay影音(video.friday.tw)公告為準。</li>
+<li>參加本活動同時，即視為同意接受本活動規範，friDay影音保留對本活動取消、終止、修改或暫停之權利</li>
+
+				</ol>
+            </div>
+        </div>
+    </div>
 
 </div><!--#wrapper-->
 
+    <!--footer-->
+    <div id="footer_m">
+      <div class="ftr_logos_m"><a href="http://video.friday.tw/" target="_blank"><img src="images/ftr_logo01_B.jpg" width="120" height="30" /></a><a href="#"><img src="images/ftr_logo02_B.jpg" width="87" height="38" /></a> </div>
+      <div class="footer_links"><a href="http://www.fetnet.net/cs/Satellite/Corporate/coHome" target="_blank">關於遠傳</a>|<a href="http://www.fetnet.net/mobile/privacy.html" target="_blank">隱私權條款</a>|<a href="mailto:video@fareastone.com.tw" target="_blank">合作提案</a>|<a href="http://www.cpc.ey.gov.tw/" target="_blank">行政院消保會</a>|<a href="http://www.fetnet.net/mobile/copyright.html" target="_blank">著作權保護措施</a></div><div class="Clearfloat"></div>
+      <p>客服專線：遠傳手機直撥888/123 MVPN用戶99888/123(免費)；<br />
+        市話撥449-5888/449-5123 (市內計費)。<a href="http://www.fetnet.net/cs/Satellite/eCare/Service_no" target="_blank">其他服務專線</a><br />
+        遠傳電信版權所有 Copyright ©2016 Far Eastone  Telecommunications Co., Ltd. All Rights Reserved.</p>
+    </div>
+    <a href="#" class="scrollup">Scroll</a> </div>
+  <!--  MOBLIE END  --> 
+</div>
 </body>
 </html>

@@ -2,8 +2,11 @@
   font-family: 'SourceHanSans','PingFang TC','Heiti TC','Microsoft JhengHei',San-serif;  
 }
 
-.layout-slideshow{
-    background: url(../img/banner.png);
+.layout-slideshow-pc{
+    background: url(../img/kv_pc.png) no-repeat 0 0;
+}
+.layout-slideshow-m{
+    background: url(../img/kv_m.png) no-repeat 0 0;
 }
 .slideshow-submenu {
     top:10px;
@@ -11,63 +14,110 @@
     text-align: right;
 }
 .slideshow-submenu a{
-    margin-left: 20px;
+    margin-right: 20px;
     color: white;
-}
-
-.slideshow-body {
-    top: 292px;
-    left: 260px;
-    width: 400px;
+    font-size: 15px;
 }
 .slideshow-body h2{
-    color: aqua;
+    color: #23ACDD;
     margin-bottom: 0;
+    font-size: 20px;
 }
 .slideshow-body p{
     margin-top:10px;
+    font-size: 16px;
+    line-height: 1.2em;
 }
 .slideshow-body span{
-    color: purple;
+    color: #C74E95;
 }
 
-.slideshow-menu {
-    top:320px;
-    right:20px
+
+.m-list{
+    background: #E8E8E9;
+}
+.slick-arrow.slick-prev:before,.slick-arrow.slick-next:before{
+    width: 20px;
+    height: 23px;
+    display: block;
+    background-repeat: no-repeat;
+}
+.slick-arrow.slick-prev:before{
+    content: "";
+    background-image: url("../img/arrow_prev.png");
+}
+.slick-arrow.slick-next:before{
+    content: "";
+    background-image: url("../img/arrow_next.png");
 }
 
 .m-list-item-text{
     background: #000;
     color: white;
 }
+.m-list-item-text:before{
+    content: " ";
+    background: url(../img/goldleaf-inverse.png) no-repeat 0 0;
+    width: 15px;
+    height: 15px;
+    display: block;
+    float: left;
+ 
+    
+}
 .m-list-item-text>div{
     display: inline;
 }
-.m-list-item-template{
+.m-list-item-template-pc,.m-list-item-template-m{
     display: none;
+}
+.slick-slider.m-list-inner{
+    margin-bottom:0 ;
 }
 .m-body{
     background: darkgrey;
     color: white;
+    background: url(../img/bg.png) repeat-x 0 0 ;
 }
-.m-body-template{
+.m-body-template-pc,.m-body-template-m{
     display: none;
 }
 .m-body-award{
-    background: black;
-    padding: 5px;
+    background: #595757;
+    padding: 5px 10px;
+}
+.m-body-award:before,.m-body-award:after{
+    content: " ";
+    width: 15px;
+    height: 15px;
+    display: block;
+    padding: 0 10px;
+}
+.m-body-award:before{
+    background: url(../img/goldleaf-inverse.png) no-repeat 50% 0;
+    float: left;
+}
+.m-body-award:after{
+    background: url(../img/goldleaf.png) no-repeat 50% 0;
+    float: right;
 }
 .m-body-title h2{
     margin: 5px 0;
+    font-size: 26px;
+    color: #7d7d7d
 }
 .m-body-img1 img{
-    width: 180px;
+    height: 100%;
 }
 .m-body-img2 img{
-    width: 180px;
+    height: 100%;
 }
 .m-body-btn img{
     width: 180px;
+}
+.m-body-body{
+    font-size: 15px;
+    line-height: 1.3em;
 }
 
 
@@ -75,7 +125,7 @@
     text-align: center;
     font-size: 26px;
     padding: 10px;
-    color: #C74D95;
+    color: #C74E95;
 }
 
 .tip-title{
@@ -90,12 +140,18 @@
 .tip-body{
     display: block;
     overflow: hidden;
-    transition: max-height .6s;
-    background: #D6D7D7;
+    transition: all .6s;
+    background: #D5D6D6;
 }
 .tip-body:not(.tip-body-open){
     max-height: 0;
+    padding: 0 50px ;
 }
 .tip-body-open{
     max-height: 999px;
+    padding: 30px 50px ;
+}
+.m-tip ol li{
+    list-style:decimal;
+    line-height: 1.5em;
 }

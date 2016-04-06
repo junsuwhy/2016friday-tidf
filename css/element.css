@@ -43,7 +43,9 @@
 .m-list-item-text>div{
     display: inline;
 }
-
+.m-list-item-template{
+    display: none;
+}
 .m-body{
     background: darkgrey;
     color: white;

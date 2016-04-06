@@ -50,6 +50,9 @@
     background: darkgrey;
     color: white;
 }
+.m-body-template{
+    display: none;
+}
 .m-body-award{
     background: black;
     padding: 5px;

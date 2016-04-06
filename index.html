@@ -3,12 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" href="css/layout.css">
-	<link rel="stylesheet" href="css/element.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/element.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 <!--	<script src="js/lib/angular.min.js"></script>-->
-    <script src="js/lib/jquery.min.js"></script>
-	<script src="js/data.js"></script>
-	<script src="js/script.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/slick.min.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 <!--	<script src="js/controller.js"></script>-->
 </head>
 <body>
@@ -32,6 +35,9 @@
     </div>
     <div class="layout layout-main">
         <div class="m-list">
+            
+        </div>
+        <div class="m-list-item-wrapper">
             <div class="m-list-item-template m-list-item">
                 <img class="m-list-item-img" src="img/{{imgSmall}}" alt="">
                 <div class="m-list-item-text">
@@ -41,14 +47,20 @@
             </div>
         </div>
         <div class="m-body">
-            <div class="m-body-award">TIDF歷年得獎精選 第八屆台灣獎首獎</div>
-            <div class="m-body-img1"><img src="img/pic1_1.jpg" alt=""></div>
-            <div class="m-body-youtube"></div>
-            <div class="m-body-img2"><img src="img/pic1_2.jpg" alt=""></div>
-            <div class="m-body-title"><h2>金城小子</h2></div>
-            <div class="m-body-body">同步榮獲第48屆金馬獎最佳紀錄片;從 小離鄉的知名畫家劉小東,30年後決 定重歸故里,重新面對鄉愁</div>
-            <div class="m-body-btn"><a href=""><img src="img/btn-movie.png" alt=""></a></div>
+            
         </div>
+        <div class="m-body-template-wrapper">
+            <div class="m-body-template m-body-item">
+               <div class="m-body-award">{{award}}</div>
+               <div class="m-body-img1"><img src="img/{{imgBig}}" alt=""></div>
+               <div class="m-body-youtube"></div>
+               <div class="m-body-img2"><img src="img/{{imgSmall}}" alt=""></div>
+               <div class="m-body-title"><h2>{{title}}</h2></div>
+               <div class="m-body-body">{{description}}</div>
+               <div class="m-body-btn"><a href="{{link}}"><img src="img/btn-movie.png" alt=""></a></div>
+           </div>
+        </div>
+        
         
         <div class="m-focus">
             <div class="focus-title">焦點影展</div>

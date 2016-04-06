@@ -16,8 +16,13 @@
 .layout-main {
     
 }
+.m-list{
+    width: 880px;
+    margin-left: 40px;
+}
 .m-list-item{
     float: left;
+    margin-right: 20px;
 }
 .m-list-item{
     position: relative;
@@ -41,7 +46,7 @@
     height: 400px;
     position: relative;
 }
-.m-body>div{
+.m-body-item>div{
     position: absolute;
 }
 .m-body-award{

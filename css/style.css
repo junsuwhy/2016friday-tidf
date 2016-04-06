@@ -148,6 +148,19 @@ input{}
 	#content_m{ font-size:30px; font-weight: bold; text-align: center; display:block; height: 800px; line-height:800px;  background-color:#F4F4F4;}	
 	.ftr_logos_m{ float: none; text-align: center; margin-bottom:15px;}
 	.ftr_logos_m a{ margin-right: 15px;}
+    
+    /**焦點影展Adbanner**/
+		#AdBanners{}
+		#AdBanners h3{ display: block; background:url(../images/h3_ADbanner_title.gif) no-repeat top center; height: 55px; margin-top: 15px;}
+		/*banner*/
+		#Banners_m{ display: block; position: relative; width: 550px; height: 75px; margin: 5px auto 70px auto; overflow: hidden;}
+		#left_m, #right_m{ background:url(../images/arw.png) no-repeat 0 16px; display:block; height: 70px; width: 20px; float:left; cursor: pointer; position: absolute; left:0px; top: 0px;}
+		#Banners_m #right_m{ background-position: -30px 16px; position: absolute; left: 530px; top: 0px; float:right;}
+		.banner_In_m{ margin: 0 auto;overflow: hidden; position: relative; width: 515px; height: 80px; padding: 0px; margin-left: 10px;}
+		#Banners_m ul{ position: absolute; width: 1500px; }
+		#Banners_m ul li{ float: left; width: 236px; height: 80px; position: relative; margin-right: 20px; }
+		#Banners_m ul li img{ border: 2px solid #FFFFFF;}
+    
 	#footer_m{ text-align:center; color: #565454;padding: 20px 0; border-top: 1px solid #b3b3b3; background-color: #FFFFFF; }
 	#footer_m .footer_links a{ color:#666666; font-size:11px; padding:0 3px;}
 	

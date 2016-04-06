@@ -18,8 +18,8 @@ $(document).ready(function($){
             var htmlElem = $('.'+tempClass).parent().html();
             console.log($(this).data('movie'));
             var $elem = insertElem(htmlElem,'.m-body-m',data[$(this).attr('data-movie')],dataFields,true).removeClass(tempClass);
-            if($(this).attr('data-movie') == 0)$(this).trigger('click');
         });
+        if($(this).attr('data-movie') == 0)$(this).trigger('click');
     });
     $('.m-list-inner').slick({
         slidesToShow: 2,

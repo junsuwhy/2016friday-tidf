@@ -13,8 +13,8 @@ var data = [
     {
         "title" : "金城小子",
         "director" : "XXX",
-        "award" : "TIDF歷年得獎精選 第八屆台灣獎首獎",
-        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從 小離鄉的知名畫家劉小東,30年後決 定重歸故里,重新面對鄉愁",
+        "award" : "第八屆台灣獎首獎",
+        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從小離鄉的知名畫家劉小東,30年後決定重歸故里,重新面對鄉愁",
         "imgBig" : "pic1_1.jpg",
         "imgSmall" : "pic1_2.jpg",
         "youtubeID" : "G71t7rXZC1w",
@@ -22,8 +22,8 @@ var data = [
     },{
         "title" : "艾未未．草泥馬",
         "director" : "XXX",
-        "award" : "TIDF歷年得獎精選 第八屆台灣獎首獎",
-        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從 小離鄉的知名畫家劉小東,30年後決 定重歸故里,重新面對鄉愁",
+        "award" : "第八屆台灣獎首獎",
+        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從小離鄉的知名畫家劉小東,30年後決定重歸故里,重新面對鄉愁",
         "imgBig" : "pic2_1.jpg",
         "imgSmall" : "pic2_2.jpg",
         "youtubeID" : "hKmZ65MlOl8",
@@ -31,7 +31,8 @@ var data = [
     },{
         "title" : "黑晝記",
         "director" : "XXX",
-        "award" : "TIDF歷年得獎精選 第八屆台灣獎首獎",
+        "award" : "第八屆台灣獎首獎",
+        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從小離鄉的知名畫家劉小東,30年後決定重歸故里,重新面對鄉愁",
         "imgBig" : "pic3_1.jpg",
         "imgSmall" : "pic3_2.jpg",
         "youtubeID" : "j8MOCZP9yHI",
@@ -39,7 +40,8 @@ var data = [
     },{
         "title" : "再會吧！1999",
         "director" : "XXX",
-        "award" : "TIDF歷年得獎精選 第八屆台灣獎首獎",
+        "award" : "第八屆台灣獎首獎",
+        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從小離鄉的知名畫家劉小東,30年後決定重歸故里,重新面對鄉愁",
         "imgBig" : "pic4_1.jpg",
         "imgSmall" : "pic4_2.jpg",
         "youtubeID" : "91zsx1ebG_o",
@@ -47,7 +49,8 @@ var data = [
     },{
         "title" : "部落之音",
         "director" : "XXX",
-        "award" : "TIDF歷年得獎精選 第八屆台灣獎首獎",
+        "award" : "第八屆台灣獎首獎",
+        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從小離鄉的知名畫家劉小東,30年後決定重歸故里,重新面對鄉愁",
         "imgBig" : "pic5_1.jpg",
         "imgSmall" : "pic5_2.jpg",
         "youtubeID" : "9N2ik31VSow",
@@ -55,7 +58,8 @@ var data = [
     },{
         "title" : "第四公民",
         "director" : "XXX",
-        "award" : "TIDF歷年得獎精選 第八屆台灣獎首獎",
+        "award" : "第八屆台灣獎首獎",
+        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從小離鄉的知名畫家劉小東,30年後決定重歸故里,重新面對鄉愁",
         "imgBig" : "pic6_1.jpg",
         "imgSmall" : "pic6_2.jpg",
         "youtubeID" : "4xLWXTJN6I8",
@@ -63,7 +67,8 @@ var data = [
     },{
         "title" : "哈瑪斯之子",
         "director" : "XXX",
-        "award" : "TIDF歷年得獎精選 第八屆台灣獎首獎",
+        "award" : "第八屆台灣獎首獎",
+        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從小離鄉的知名畫家劉小東,30年後決定重歸故里,重新面對鄉愁",
         "imgBig" : "pic7_1.jpg",
         "imgSmall" : "pic7_2.jpg",
         "youtubeID" : "r680wdZZnUo",
@@ -71,7 +76,8 @@ var data = [
     },{
         "title" : "太陽•不遠",
         "director" : "XXX",
-        "award" : "TIDF歷年得獎精選 第八屆台灣獎首獎",
+        "award" : "第八屆台灣獎首獎",
+        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從小離鄉的知名畫家劉小東,30年後決定重歸故里,重新面對鄉愁",
         "imgBig" : "pic8_1.jpg",
         "imgSmall" : "pic8_2.jpg",
         "youtubeID" : "2qEjb4Emzc0",
@@ -79,7 +85,8 @@ var data = [
     },{
         "title" : "蘇富比偽畫大師",
         "director" : "XXX",
-        "award" : "TIDF歷年得獎精選 第八屆台灣獎首獎",
+        "award" : "第八屆台灣獎首獎",
+        "description" : "同步榮獲第48屆金馬獎最佳紀錄片;從小離鄉的知名畫家劉小東,30年後決定重歸故里,重新面對鄉愁",
         "imgBig" : "pic9_1.jpg",
         "imgSmall" : "pic9_2.jpg",
         "youtubeID" : "BcqPkVVehZo",

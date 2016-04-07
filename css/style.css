@@ -111,7 +111,7 @@ input{}
 		/*banner*/
 		#Banners{ display: block; position: relative; width: 800px; margin: 5px auto 70px 45px;}
 		#left, #right{ background:url(../images/arw.png) no-repeat 0 16px; display:block; height: 70px; width: 20px; float:left; cursor: pointer; position: absolute; left:0px; top: 0px;}
-		#Banners #right{ background-position: -30px 16px; position: absolute; left: 800px; top: 0px; float:right;}
+		#Banners #right{ background-position: -25px 16px; position: absolute; left: 800px; top: 0px; float:right;}
 		.banner_In{ margin: 0 auto;overflow: hidden; position: relative; width: 100%; height: 80px; padding: 0px; left: 20px;}
 		#Banners ul{ position: absolute; width: 2000px; }
 		#Banners ul li{ float: left; width: 236px; height: 74px; position: relative; margin-right: 18px; }
@@ -154,9 +154,9 @@ input{}
 		#AdBanners h3{ display: block; background:url(../images/h3_ADbanner_title.gif) no-repeat top center; height: 55px; margin-top: 15px;}
 		/*banner*/
 		#Banners_m{ display: block; position: relative; width: 550px; height: 75px; margin: 5px auto 70px auto; overflow: hidden;}
-		#left_m, #right_m{ background:url(../images/arw.png) no-repeat 0 16px; display:block; height: 70px; width: 20px; float:left; cursor: pointer; position: absolute; left:0px; top: 0px;}
-		#Banners_m #right_m{ background-position: -30px 16px; position: absolute; left: 530px; top: 0px; float:right;}
-		.banner_In_m{ margin: 0 auto;overflow: hidden; position: relative; width: 515px; height: 80px; padding: 0px; margin-left: 10px;}
+		#left_m, #right_m{ background:url(../images/arw.png) no-repeat 0 16px; display:block; height: 70px; width: 22px; float:left; cursor: pointer; position: absolute; left:0px; top: 0px;}
+		#Banners_m #right_m{ background-position: -25px 16px; position: absolute; left: 530px; top: 0px; float:right;}
+		.banner_In_m{ margin: 0 auto;overflow: hidden; position: relative; width: 505px; height: 80px; padding: 0px; margin-left: 10px;}
 		#Banners_m ul{ position: absolute; width: 1500px; }
 		#Banners_m ul li{ float: left; width: 236px; height: 80px; position: relative; margin-right: 20px; }
 		#Banners_m ul li img{ border: 2px solid #FFFFFF;}

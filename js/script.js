@@ -1,6 +1,14 @@
 $(document).ready(function($){
+    $(".tip-body").css("max-height",0);
     $(".tip-title").click(function(){
-        $(".tip-body").toggleClass('tip-body-open');
+        if($(this).hasClass('is-open')){
+            $(".tip-body").animate({"max-height": 0 ,"padding-top":0,"padding-bottom":0},'slow');
+            $(this).removeClass('is-open');
+        }else{
+            $(".tip-body").animate({"max-height": 999,"padding-top":30,"padding-bottom":30},'slow');
+            $(this).addClass('is-open');
+        }
+        
     });
     copyTemplate(".m-list-item-template-pc",".m-list-inner-pc",data,dataFields);
     copyTemplate(".m-list-item-template-m",".m-list-inner-m",data,dataFields);

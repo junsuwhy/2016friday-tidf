@@ -1,3 +1,10 @@
+body{
+    background: #ccc;
+}
+#container_pc,#container_m{
+    background: #fff;
+}
+
 *{
   font-family: 'SourceHanSans','PingFang TC','Heiti TC','Microsoft JhengHei',San-serif;  
 }
@@ -137,6 +144,9 @@
 }
 .m-body-btn img{
     width: 180px;
+}
+#container_m .m-body-btn img{
+    width: 160px;
 }
 .m-body-body{
     font-size: 15px;

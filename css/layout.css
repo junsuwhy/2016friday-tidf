@@ -70,7 +70,7 @@
 }
 .m-list-item-text{
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     left: 15px;
     right: 15px;
     padding: 5px;
@@ -87,6 +87,9 @@
 }
 #container_m .m-list-item-text{
     right: 0;
+}
+#container_m .slick-list{
+    left: -8px;
 }
 .m-body{
     clear: both;

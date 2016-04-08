@@ -52,21 +52,44 @@
 }
 
 .m-list-item-text{
-    background: #000;
+    background: rgba(0,0,0,0.7);
     color: white;
+    height: 50px;
+}
+.m-list-item-text:before,
+.m-list-item-text:after{
+    content: " ";
+    width: 30px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    
 }
 .m-list-item-text:before{
-    content: " ";
-    background: url(../img/goldleaf-inverse.png) no-repeat 0 0;
-    width: 15px;
-    height: 15px;
-    display: block;
-    float: left;
- 
-    
+    background: url(../img/goldleaf-left.png) no-repeat 0 0;
+    left: 0;
+}
+.m-list-item-text:after{
+    background: url(../img/goldleaf-right.png) no-repeat 0 0;
+    right: 0;
 }
 .m-list-item-text>div{
     display: inline;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 24px;
+}
+.mlit-award{
+    bottom: 24px;
+}
+#container_m .mlit-award{
+    font-size: 12px;
+}
+.mlit-title{
+    bottom: 2px;
+
 }
 .m-list-item-template-pc,.m-list-item-template-m{
     display: none;
@@ -104,7 +127,7 @@
 .m-body-title h2{
     margin: 5px 0;
     font-size: 26px;
-    color: #7d7d7d
+    color: #FFE800;
 }
 .m-body-img1 img{
     height: 100%;
@@ -118,6 +141,9 @@
 .m-body-body{
     font-size: 15px;
     line-height: 1.3em;
+}
+.mlit-award{
+    font-size: 15px;
 }
 .mlit-title{
     font-size: 13px;

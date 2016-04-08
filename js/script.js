@@ -45,8 +45,9 @@ function copyTemplate(tempElem,parentElem,data,fields){
     for(var i = 0;i<data.length;i++){
         var htmlElem = htmlTemp;
         var tempClass = tempElem.replace(".","");
+        var itemClassName = parentElem.replace(".","");
         var $elem = insertElem(htmlElem, parentElem, data[i],fields,false);
-        $elem.removeClass(tempClass).attr('data-movie',i)
+        $elem.removeClass(tempClass).attr('data-movie',i).addClass(itemClassName + "-item-" + i);
     }
 }
 

@@ -4,17 +4,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=640px">
-<title>friDay影音</title>
-<meta name="keywords" content="金城小子,艾未未．草泥馬,黑晝記,再會吧！1999,部落之音,第四公民,哈瑪斯之子,太陽•不遠,蘇富比偽畫大師">
-<meta name="description" content="搶先播映TIDF歷屆得獎精選!立即輸入序號[2016TIDF],TIDF歷屆得獎影片免費 看,4/24前兌換,加碼再抽2016TIDF影展兌換券!">
+<title>friDay影音X2016 TIDF</title>
+<meta name="description" content=" friDay影音提供用戶專屬體驗，立即體驗friDay影音影劇館7天免費看到飽。強檔影劇周周更新、高畫質影片、繁體中文字幕，全站無廣告，支援電腦、平板、智慧型手機，不限遠傳用戶也可以申辦！" />
+<meta name="keywords" content="friDay影音, friDay,遠傳影城, 遠傳優惠,線上看電影,免費電影,連續劇,新聞直播,新聞,直播 ,電影,線上影音,線上看電影,TIDF,紀錄片,台灣國際紀錄片影展,台灣紀錄片影展, 金城小子, 艾未未．草泥馬, 黑晝記, 再會吧！1999, 部落之音, 第四公民, 哈瑪斯之子, 太陽•不遠, 蘇富比偽畫大師 " />
 <!--FB meta-->
-<meta property="og:site_name" content="friDay影音">
-<meta property="og:type" content="website">
-<meta property="og:title" content="friDay影音">
-<meta property="og:description" content="電影隨選隨看">
-<!--Google+ meta-->
-<meta itemprop="name" content="friDay影音"/>
-<meta itemprop="description" content="電影隨選隨看" >
+    <meta property="og:site_name" content="friDay影音">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="friDay影音">
+    <meta property="og:description" content=" friDay影音X2016 TIDF ">
+    <!--Google+ meta-->  
+           <meta itemprop="name" content="friDay影音"/>
+           <meta itemprop="description" content=" friDay影音X2016 TIDF " >
 <!--CSS Link-->
 <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" href="http://video.friday.tw/eventcom/images/favicon.png">
@@ -53,6 +53,21 @@ $(document).ready(function(){
     </script>
 <!--end TOP語法-->
 <body>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '577518445732876');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=577518445732876&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
 <div id="wrap"> 
   <!--  PC START  -->
   <div id="container_pc"> 
@@ -77,11 +92,11 @@ $(document).ready(function(){
         <div class="slideshow-title"><img src="img/title_pc.png" alt=""></div>
         <div class="slideshow-body slideshow-block">
            <h2>搶先播映TIDF歷屆得獎精選!</h2>
-            <p class="s-body">立即輸入序號[<span>2016TIDF</span>],TIDF歷屆得獎影片免費 看,4/24前兌換,加碼再抽2016TIDF影展兌換券!</p>
+            <p class="s-body">立即輸入序號[<span>2016TIDF</span>]TIDF歷屆得獎影片免費看！4/24前兌換，加碼再抽2016TIDF影展貴賓兌換券！</p>
         </div>
         <div class="slideshow-menu slideshow-block">
-            <a href="http://video.friday.tw/sn" class="s-menu-btn"><img src="img/btn-1.png" alt=""></a>
-            <a href="http://video.friday.tw/packages" class="s-menu-btn"><img src="img/btn-2.png" alt=""></a>
+            <a href="http://video.friday.tw/sn?sn=2016TIDF&button=2016TIDF" class="s-menu-btn"><img src="img/btn-1.png" alt=""></a>
+            <a href="http://video.friday.tw/packages?button=2016TIDF" class="s-menu-btn"><img src="img/btn-2.png" alt=""></a>
         </div>
     </div>
     <div class="layout layout-main">
@@ -105,11 +120,11 @@ $(document).ready(function(){
         </div>
         <div class="m-body-template-wrapper">
             <div class="m-body-template m-body-item m-body-template-pc">
-               <div class="m-body-award">{{award}}</div>
+               <div class="m-body-award">{{awardB}}</div>
                <div class="m-body-img1"><img src="img/{{imgBig}}" alt=""></div>
                <div class="m-body-youtube"><iframe width="243" height="135" src="https://www.youtube.com/embed/{{youtubeID}}?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
                <div class="m-body-img2"><img src="img/{{imgSmall}}" alt=""></div>
-               <div class="m-body-title"><h2>{{title}}</h2></div>
+               <div class="m-body-title"><h2>{{titleB}}</h2></div>
                <div class="m-body-body">{{description}}</div>
                <div class="m-body-btn"><a href="{{link}}"><img src="img/btn-movie.png" alt=""></a></div>
            </div>
@@ -188,11 +203,11 @@ $(document).ready(function(){
         <div class="slideshow-title"><img src="img/title_m.png" alt=""></div>
         <div class="slideshow-body slideshow-block">
            <h2>搶先播映TIDF歷屆得獎精選!</h2>
-            <p class="s-body">立即輸入序號[<span>2016TIDF</span>],TIDF歷屆得獎影片免費 看,4/24前兌換,加碼再抽2016TIDF影展兌換券!</p>
+            <p class="s-body">立即輸入序號[<span>2016TIDF</span>]，TIDF歷屆得獎影片免費看！4/24前兌換，加碼再抽2016TIDF影展貴賓兌換券！</p>
         </div>
         <div class="slideshow-menu slideshow-block">
-            <a href="http://video.friday.tw/sn" class="s-menu-btn"><img src="img/btn-1.png" alt=""></a>
-            <a href="http://video.friday.tw/packages" class="s-menu-btn"><img src="img/btn-2.png" alt=""></a>
+            <a href="http://video.friday.tw/sn?sn=2016TIDF&button=2016TIDF" class="s-menu-btn"><img src="img/btn-1.png" alt=""></a>
+            <a href="http://video.friday.tw/packages?button=2016TIDF" class="s-menu-btn"><img src="img/btn-2.png" alt=""></a>
         </div>
     </div>
     <div class="layout layout-main">
@@ -216,11 +231,11 @@ $(document).ready(function(){
         </div>
         <div class="m-body-template-wrapper">
             <div class="m-body-template m-body-item m-body-template-m">
-               <div class="m-body-award">{{award}}</div>
+               <div class="m-body-award">{{awardB}}</div>
                <div class="m-body-img1"><img src="img/{{imgBig}}" alt=""></div>
                <div class="m-body-youtube"><iframe width="505" height="290" src="https://www.youtube.com/embed/{{youtubeID}}?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
                <div class="m-body-img2"><img src="img/{{imgSmall}}" alt=""></div>
-               <div class="m-body-title"><h2>{{title}}</h2></div>
+               <div class="m-body-title"><h2>{{titleB}}</h2></div>
                <div class="m-body-body">{{description}}</div>
                <div class="m-body-btn"><a href="{{link}}"><img src="img/btn-movie.png" alt=""></a></div>
            </div>

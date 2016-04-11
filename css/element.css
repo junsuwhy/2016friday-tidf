@@ -184,6 +184,7 @@ body{
 }
 .tip-body a{
     color: grey;
+    text-decoration: underline;
 }
 .tip-body-open{
     max-height: 999px;

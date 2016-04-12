@@ -73,3 +73,16 @@ function insertElem(htmlElem,parentElem,dataElem,fields,isReplace){
     }
     return $elem;
 }
+
+//FB share
+function shareFacebook(){
+	var share_url = 'https://www.facebook.com/dialog/feed?app_id=505571959643999&display=popup&picture=http%3A%2F%2Fvideo.friday.tw%2Fact%2F2016TIDF%2Fimg%2Ffb_og.jpg&link=http%3A%2F%2Fvideo.friday.tw%2Fact%2F2016TIDF%2F&redirect_uri=http%3A%2F%2Fvideo.friday.tw%2Fact%2F2016TIDF%2F&name=friDay%E5%BD%B1%E9%9F%B3X2016%20TIDF&description=%E6%90%B6%E5%85%88%E6%92%AD%E6%98%A0TIDF%E6%AD%B7%E5%B1%86%E5%BE%97%E7%8D%8E%E7%B2%BE%E9%81%B8%EF%BC%814%2F24%E5%89%8D%E5%85%8C%E6%8F%9B%E5%85%8D%E8%B2%BB%E9%AB%94%E9%A9%97%E5%BA%8F%E8%99%9F%EF%BC%8C%E5%8A%A0%E7%A2%BC%E5%86%8D%E6%8A%BD2016%20TIDF%E8%B2%B4%E8%B3%93%E5%85%8C%E6%8F%9B%E5%88%B8%EF%BC%81';
+	var w_width=600;                                                                        
+	var w_height=300;                                                                        
+	var x=(screen.width-w_width)/2;                                                        
+	var y=(screen.height-w_height)/2;                                                     
+	var ww='width='+w_width+',height='+w_height+',top='+y+',left='+x;   
+	
+	window.open(share_url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,'+ww);
+	
+}

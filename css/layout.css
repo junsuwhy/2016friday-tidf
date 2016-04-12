@@ -15,6 +15,14 @@
 .slideshow-block{
     position: absolute;
 }
+.shr-btn-block{
+  top: 40px;
+  right: 20px;
+}
+#container_m .shr-btn-block{
+  top: 30px;
+  right: 20px;
+}
 .slideshow-title{
     position: absolute;
     top:200px;

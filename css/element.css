@@ -81,6 +81,18 @@ body{
     background: url(../img/goldleaf-right.png) no-repeat 0 0;
     right: 0;
 }
+
+.m-list-item-new .m-list-item-text:before{
+    background: url(../img/crown-pc.png) no-repeat 0 0;
+    left: 10px;
+    top: 10px;
+}
+.m-list-item-new .m-list-item-text:after{
+    background: url(../img/crown-pc.png) no-repeat 0 0;
+    right: 10px;
+    top: 10px;
+}
+
 .m-list-item-text>div{
     display: inline;
     position: absolute;
@@ -109,6 +121,19 @@ body{
     background: darkgrey;
     color: white;
     background: url(../img/bg_m.png) repeat-x 0 0 ;
+    position: relative;
+}
+.m-body-new{
+    background: url(../img/g-line-pc.png) no-repeat 0 370px;
+    background-color: #333;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+#container_m .m-body-new{
+    background: url(../img/g-line-pc.png) no-repeat 0 600px
 }
 .m-body-template-pc,.m-body-template-m{
     display: none;
@@ -132,10 +157,20 @@ body{
     background: url(../img/goldleaf.png) no-repeat 50% 0;
     float: right;
 }
+.m-body-new .m-body-award{
+    background-image: url(../img/award-pc.png);
+    color: #333;
+}
+.m-body-award:before,.m-body-award:after{
+    background: none;
+}
 .m-body-title h2{
     margin: 5px 0;
     font-size: 26px;
     color: #FFE800;
+}
+.m-body-new .m-body-title h2{
+    color: #FFDB45;
 }
 .m-body-img1 img{
     height: 100%;

@@ -61,7 +61,6 @@ function copyTemplate(tempElem,parentElem,data,fields){
  * @return jQuery             回傳新增元件的jQuery物件
  */
 function insertElem(htmlElem,parentElem,dataElem,fields,isReplace){
-    console.log(dataElem);
     for(var j = 0;j<fields.length; j++){
         var content = dataElem[fields[j]];
         re = RegExp("\{\{" + fields[j] + "\}\}","gi");
@@ -82,9 +81,15 @@ function insertElem(htmlElem,parentElem,dataElem,fields,isReplace){
     return $elem;
 }
 
-//FB share
-function shareFacebook(){
-	var share_url = 'https://www.facebook.com/dialog/feed?app_id=505571959643999&display=popup&picture=http%3A%2F%2Fvideo.friday.tw%2Fact%2F2016TIDF%2Fimg%2Ffb_og.jpg&link=http%3A%2F%2Fvideo.friday.tw%2Fact%2F2016TIDF%2F&redirect_uri=http%3A%2F%2Fvideo.friday.tw%2Fact%2F2016TIDF%2F&name=friDay%E5%BD%B1%E9%9F%B3X2016%20TIDF&description=%E6%90%B6%E5%85%88%E6%92%AD%E6%98%A0TIDF%E6%AD%B7%E5%B1%86%E5%BE%97%E7%8D%8E%E7%B2%BE%E9%81%B8%EF%BC%814%2F24%E5%89%8D%E5%85%8C%E6%8F%9B%E5%85%8D%E8%B2%BB%E9%AB%94%E9%A9%97%E5%BA%8F%E8%99%9F%EF%BC%8C%E5%8A%A0%E7%A2%BC%E5%86%8D%E6%8A%BD2016%20TIDF%E8%B2%B4%E8%B3%93%E5%85%8C%E6%8F%9B%E5%88%B8%EF%BC%81';
+//FB share, used in PC
+function shareFacebook(url, options, app_id){
+    /**
+     * options: 
+     * picture, name, description, redirect_uri
+     */
+
+    var share_url = 'https://www.facebook.com/dialog/feed?app_id=' + app_id + '&display=popup&picture=' + encodeURI(options.picture) + '&link=' + url + '&redirect_uri=' + encodeURI(options.redirect_uri) + '&name=' + encodeURI(options.name) + '&description=' + encodeURI(options.description);
+    console.log(share_url);
 	var w_width=600;                                                                        
 	var w_height=300;                                                                        
 	var x=(screen.width-w_width)/2;                                                        
